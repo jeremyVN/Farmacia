@@ -10,13 +10,15 @@ class Venta extends Model
     use HasFactory;
 
     public $timestamps = false;
-
+    const sumatotal=0;
     protected $table = 'ventas';
     
     protected $fillable = [
         'cliente_nombre',
         'usuario_id',
         'total',
+        
+
     ];
 
     public function usuario()

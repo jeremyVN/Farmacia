@@ -16,6 +16,7 @@ export interface NavItem {
     href: string;
     icon?: LucideIcon;
     isActive?: boolean;
+    children?: NavItem[];
 }
 
 export interface SharedData extends PageProps {
@@ -34,6 +35,4 @@ export interface User {
     email_verified_at: string | null;
     created_at: string;
     updated_at: string;
-}
-
-export type BreadcrumbItemType = BreadcrumbItem;
+}export type BreadcrumbItemType = BreadcrumbItem;
